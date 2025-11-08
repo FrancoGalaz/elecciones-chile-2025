@@ -53,11 +53,13 @@ const EleccionesChile2025 = () => {
   }, []);
 
   const TimeCard = ({ value, label }) => (
-    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 min-w-[70px] sm:min-w-[90px] md:min-w-[100px] shadow-xl flex-1 max-w-[90px] sm:max-w-none">
-      <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1">
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 min-w-[65px] sm:min-w-[90px] md:min-w-[100px] shadow-xl flex-1 max-w-[85px] sm:max-w-none">
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-0.5 sm:mb-1">
         {String(value).padStart(2, '0')}
       </div>
-      <div className="text-xs sm:text-sm text-blue-100 uppercase tracking-wide">{label}</div>
+      <div className="text-[10px] sm:text-xs md:text-sm text-blue-100 uppercase tracking-tight sm:tracking-wide leading-tight">
+        {label}
+      </div>
     </div>
   );
 
