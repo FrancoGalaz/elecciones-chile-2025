@@ -153,10 +153,10 @@ export default function PoliticaPrivacidad() {
               <div className="bg-white/10 rounded-lg p-4 border border-white/20">
                 <p className="text-white font-semibold">Email:</p>
                 <a 
-                  href="mailto:francog.dev@gmail.com" 
+                  href="mailto:cuandosonlaselecciones@gmail.com" 
                   className="text-blue-300 hover:text-blue-200"
                 >
-                  francog.dev@gmail.com
+                  cuandosonlaselecciones@gmail.com
                 </a>
               </div>
             </section>
