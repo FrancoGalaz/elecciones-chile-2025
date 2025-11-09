@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Calendar, Users, Vote, Clock } from 'lucide-react';
 
 export default function EleccionesChile2025() {
@@ -401,11 +402,33 @@ export default function EleccionesChile2025() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white/10 backdrop-blur-md border-t border-white/20 py-3 sm:py-4 mt-6">
-        <div className="max-w-6xl mx-auto px-3 sm:px-4 text-center">
-          <p className="text-white text-xs sm:text-sm">
-            Información oficial: <a href="https://www.servel.cl" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-200">SERVEL</a>
-          </p>
+      <footer className="bg-white/10 backdrop-blur-md border-t border-white/20 py-4 sm:py-6 mt-6">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mb-3 sm:mb-4">
+            <Link href="/politica-privacidad" className="text-white text-xs sm:text-sm hover:text-blue-200 transition-colors underline">
+              Política de Privacidad
+            </Link>
+            <a 
+              href="https://www.servel.cl" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-xs sm:text-sm hover:text-blue-200 transition-colors underline"
+            >
+              SERVEL
+            </a>
+            <a 
+              href="mailto:francog.dev@gmail.com" 
+              className="text-white text-xs sm:text-sm hover:text-blue-200 transition-colors underline"
+            >
+              Contacto
+            </a>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-white/70 text-xs sm:text-sm">
+              © {new Date().getFullYear()} CuandoSonLasElecciones.cl - Información Electoral Chile
+            </p>
+          </div>
         </div>
       </footer>
     </div>
