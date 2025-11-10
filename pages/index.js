@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Calendar, Users, Vote, Clock } from 'lucide-react';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function EleccionesChile2025() {
   const [timeLeft, setTimeLeft] = useState({
