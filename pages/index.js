@@ -432,6 +432,7 @@ export default function EleccionesChile2025() {
           </div>
         </div>
       </footer>
+      <SpeedInsights />  
     </div>
   );
 }
